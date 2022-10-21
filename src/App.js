@@ -85,7 +85,8 @@ function App() {
   };
 
   return (
-    <>    <BrowserRouter>
+    <>  
+      {/* <BrowserRouter> */}
     
  
 
@@ -98,20 +99,22 @@ function App() {
         textColor={textColor}
       />
       <Alert alert={alert} />
-      <Routes>
-      <Route path="/" element={<TextForm
+      {/* <Routes>
+      <Route path="/" element={ */}
+      <TextForm
         showAlert={showAlert}
         mode={mode}
         heading="TextUtils"
         bgColor={bgColor}
         textColor={textColor}
-      />} />
+      />
+      {/* } /> */}
       
        
-        <Route path="/aboutus" element={<Aboutus/>} />
+        {/* <Route path="/aboutus" element={<Aboutus/>} />
       
     </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
       
     </>
   );
