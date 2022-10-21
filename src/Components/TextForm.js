@@ -85,7 +85,7 @@ export default function TexthtmlForm(props) {
           number of characters : {Text.length}
         </p>
         <p style={{ color: props.mode === "light" ? "black" : "white" }}>
-          number of words : {Text.split(" ").length - 1}
+          number of words : {Text.split(" ").filter((element)=>{return element.length!=0}).length}
         </p>
         <h4 style={{ color: props.mode === "light" ? "black" : "white" }}>
           preview text{" "}
